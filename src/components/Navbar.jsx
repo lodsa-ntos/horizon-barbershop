@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
 
           {/* Logo or Brand Name */}
-          <div class="relative w-32 h-72 bg-[#A68C6D] text-white text-center flex flex-col items-center justify-center clip-bandeira">
+          <div class="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip border-2 border-graffite-gray">
             {/* <!-- Conteúdo --> */}
             <svg
               class="w-6 h-6 mb-1"
