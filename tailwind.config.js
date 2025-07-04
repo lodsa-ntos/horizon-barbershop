@@ -48,13 +48,12 @@ export default {
         DancingScript: ['Dancing Script', 'cursive'],
       },
       colors: {
-        'rosa-sujo': '#BCA3C6 ', // Backgrounds suaves, caixas de texto
-        'rosa-escuro': '#C45CA0', // Acentos delicados
-        'roxo-claro': '#D1AEE8', // Fundos suaves, caixas de texto
-        'branco': '#FFFFFF', // Background principal
-        'Preto-acinzentado': '#333333', // Tipografia de contraste (headers)
-        'verde-petroleo': '#2F9B92', // Botões, destaques primários
-        'verde-pastel': '#f6f6f6', // Hover de links e detalhes
+        'charcoal-black': '#1C1C1E ', // fundo geral / Texto secundário
+        'graphite-gray': '#3A3A3C', // bordas; HOVERS de botões
+        'ice-white': '#F5F5F7', // texto primário
+        'matte-golden-beige': '#D6A75B', // fundo CTA buttons
+        'light-gray-blue': '#E1E3E6', // Botões, destaques primários
+        'dark-wine-red': '#6A2E2A', // Hover de links e detalhes
       },
     },
   },
