@@ -31,6 +31,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.clip-bandeira {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 70%, 0 85%);
+}
+
 .text-shadow-lg-super {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.85);
 }
