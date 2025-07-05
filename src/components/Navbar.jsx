@@ -1,4 +1,5 @@
 import React from "react";
+import { BsScissors } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -36,27 +37,13 @@ const Navbar = () => {
           </div>
 
           {/* Logo or Brand Name */}
-          <div class="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip border-2 border-graffite-gray">
+          <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
             {/* <!-- Conteúdo --> */}
-            <svg
-              class="w-6 h-6 mb-1"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              {/* <!-- Exemplo de ícone de tesoura, substitua por outro se quiser --> */}
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M14.121 14.121l5.657-5.657m-2.828 8.485a3 3 0 11-4.243-4.243m4.243 0a3 3 0 11-4.243-4.243m6.364 6.364L9.88 9.879M7.757 16.243a3 3 0 100-6 3 3 0 000 6z"
-              />
-            </svg>
-            <p class="text-sm font-bold leading-tight">
-              BARBER
-              <br />
-              REVOLUTION
-            </p>
+            <BsScissors className="w-7 h-7 mt-5"/>
+            <div className="text-sm md:text-base flex-wrap items-center justify-center">
+              <p className="font-bold">HORIZON</p>
+              <p className="text-xs">Barber'shop</p>
+            </div>
           </div>
 
           {/* Navigation Links Right Side */}
