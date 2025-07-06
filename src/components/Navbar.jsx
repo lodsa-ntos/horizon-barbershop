@@ -7,22 +7,32 @@ import GlobalContainer from "./Container";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal-black shadow">
       <div className="flex items-center justify-center h-16 md:h-20">
+
+        <div className="px-12">
+              <ul className="flex transition-all duration-200 ease-in-out">
+                <li>
+                  <a
+                    href="/"
+                    className="text-white font-[400] text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige  transition-colors duration-300 flex items-center gap-2"
+                  >
+                    <TbSearch className="size-5" />
+                    Search
+                  </a>
+                </li>
+              </ul>
+            </div>
 
         <GlobalContainer>
           <div className="flex items-center justify-between gap-10 ">
             {/* Navigation Links Left Side*/}
             <div className="flex items-center justify-between gap-x-10">
-              <div className="flex items-center gap-2">
-              <TbSearch className="text-matte-golden-beige size-5"/>
-              <span className="text-black font-[400] text-sm">Search</span>
-            </div>
               <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
                 <li>
                   <a
                     href="/"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
+                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Home
                   </a>
@@ -30,17 +40,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/services"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
+                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/about"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
-                  >
-                    About Us
                   </a>
                 </li>
               </ul>
@@ -54,7 +56,7 @@ const Navbar = () => {
                 alt="Logo"
                 className="w-10 h-10 mt-4 sm:w-32 sm:h-14 transition-all duration-200"
               />
-              <p className="text-xs font-Lobster font-[400]">Barber'shop</p>
+              <p className="text-base font-Lobster font-[400]">Barber'shop</p>
             </div>
 
             {/* Navigation Links Right Side */}
@@ -64,39 +66,38 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
+                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
                   >
-                    Gallery
+                    Booking
                   </a>
                 </li>
                 <li>
                   <a
                     href="/services"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
+                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
                   >
-                    Contact
+                    More
                   </a>
                 </li>
+              </ul>
+            </div>
+            
+          </div>
+        </GlobalContainer>
+
+        <div className="hidden md:block px-12">
+              <ul className="flex">
                 <li>
                   <a
-                    href="/about"
-                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
+                    href="/"
+                    className="text-white font-[400] text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige transition-colors duration-300 flex items-center gap-2"
                   >
-                    Booking
+                    <LuUserRoundX className="size-4" />
+                    Account
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="hidden md:block">
-              <ul className="flex gap-x-6 text-sm font-medium">
-                <li>
-                  <a href="/" className="text-black hover:text-matte-golden-beige transition-colors duration-300"><LuUserRoundX className="size-4"/></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-        </GlobalContainer>
       </div>
     </nav>
   );

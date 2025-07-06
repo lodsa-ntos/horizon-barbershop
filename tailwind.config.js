@@ -48,7 +48,7 @@ export default {
         DancingScript: ['Dancing Script', 'cursive'],
       },
       colors: {
-        'charcoal-black': '#1C1C1E ', // fundo geral / Texto secundário
+        'charcoal-black': '#1F1F1F ', // fundo geral / Texto secundário
         'graphite-gray': '#3A3A3C', // bordas; HOVERS de botões
         'ice-white': '#F5F5F7', // texto primário
         'matte-golden-beige': '#bb8c4d', // fundo CTA buttons
