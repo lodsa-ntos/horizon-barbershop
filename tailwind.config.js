@@ -51,7 +51,7 @@ export default {
         'charcoal-black': '#1C1C1E ', // fundo geral / Texto secundário
         'graphite-gray': '#3A3A3C', // bordas; HOVERS de botões
         'ice-white': '#F5F5F7', // texto primário
-        'matte-golden-beige': '#D6A75B', // fundo CTA buttons
+        'matte-golden-beige': '#bb8c4d', // fundo CTA buttons
         'light-gray-blue': '#E1E3E6', // Botões, destaques primários
         'dark-wine-red': '#6A2E2A', // Hover de links e detalhes
       },
