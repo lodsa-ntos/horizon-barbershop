@@ -40,6 +40,8 @@ function HeroSection() {
 
         {/* Background video */}
         <div>
+
+          {/* Video element */}
           <video
             ref={videoRef}
             className="absolute pb-10 top-0 left-0 w-full h-full object-cover scale-[1]"
@@ -102,6 +104,8 @@ function HeroSection() {
             </div>
           </GlobalContainer>
         </div>
+
+        
       </div>
     </section>
   );
