@@ -82,7 +82,7 @@ function HeroSection() {
         </div>
 
         {/* Gradiente overlay — para escurecer a imagem de baixo para cima */}
-        <div className="absolute inset-0 bottom-10 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-0 pointer-events-none" />
+        <div className="absolute inset-0 bottom-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-0 pointer-events-none" />
 
         {/* Conteúdo centralizado dentro do container */}
         <div className="relative z-10 flex items-center min-h-screen">
@@ -90,13 +90,13 @@ function HeroSection() {
             <div className="flex flex-col items-center justify-center h-full w-full">
               <div className="absolute bottom-24 z-[1] text-center text-white">
                 <h3 className="text-[10px] sm:text-[10px]text-center block mb-2 uppercase tracking-[.0625rem] font-[400] leading-[1rem]">
-                  Precision. Character. Confidence.
+                  Modern classics. Sharp lines. Real confidence.
                 </h3>
                 <h2 className="mb-4 text-xl sm:text-3xl md:text-[32px] font-[400] leading-10 tracking-wide text-center">
-                  Horizon Barber’shop
+                  Horizon - Your Style, Your Mark
                 </h2>
                 <h3 className="text-xs sm:text-[10px] lg:text-[15px] text-center italic font-[500] max-w-2xl mx-auto">
-                  Where your style takes on a new horizon
+                  Every cut shapes your legacy
                 </h3>
               </div>
             </div>

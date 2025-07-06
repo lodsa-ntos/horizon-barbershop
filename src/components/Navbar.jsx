@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between gap-10">
             {/* Navigation Links Left Side*/}
             <div>
-              <ul className="flex space-x-6 uppercase font-bold text-sm">
+              <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
                 <li>
                   <a
                     href="/"
@@ -51,13 +51,13 @@ const Navbar = () => {
 
             {/* Navigation Links Right Side */}
             <div>
-              <ul className="flex space-x-6 uppercase font-bold text-sm">
+              <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
                 <li>
                   <a
                     href="/"
                     className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
-                    Home
+                    Gallery
                   </a>
                 </li>
                 <li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                     href="/services"
                     className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
-                    Services
+                    Contact
                   </a>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Navbar = () => {
                     href="/about"
                     className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
-                    About Us
+                    Booking
                   </a>
                 </li>
               </ul>
