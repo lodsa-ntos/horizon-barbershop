@@ -75,7 +75,7 @@ function Navbar() {
             </div>
 
             {/* LOGO or Brand Name */}
-            <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
+            <div className="relative w-24 h-60 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
               <img
                 src="/logo/horizon-logo.svg"
                 alt="Logo"
