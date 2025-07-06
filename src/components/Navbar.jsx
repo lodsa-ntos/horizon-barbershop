@@ -10,11 +10,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between gap-10">
             {/* Navigation Links Left Side*/}
             <div>
-              <ul className="flex space-x-6 ">
+              <ul className="flex space-x-6 uppercase font-bold text-sm">
                 <li>
                   <a
                     href="/"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Home
                   </a>
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/services"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Services
                   </a>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/about"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     About Us
                   </a>
@@ -51,11 +51,11 @@ const Navbar = () => {
 
             {/* Navigation Links Right Side */}
             <div>
-              <ul className="flex space-x-6">
+              <ul className="flex space-x-6 uppercase font-bold text-sm">
                 <li>
                   <a
                     href="/"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Home
                   </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/services"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     Services
                   </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/about"
-                    className="text-lg text-black hover:text-gray-300 transition-colors duration-300"
+                    className="text-black hover:text-matte-golden-beige transition-colors duration-300"
                   >
                     About Us
                   </a>
