@@ -5,52 +5,77 @@ import { TbSearch } from "react-icons/tb";
 import { LuUserRoundCheck } from "react-icons/lu";
 import GlobalContainer from "./Container";
 
-const Navbar = () => {
+const navLinksLeft = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+];
+
+const navLinksRight = [
+  { label: "Booking", href: "/" },
+  { label: "More", href: "/services" },
+];
+
+const actionLinks = [
+  {
+    label: "Search",
+    href: "/",
+    icon: <TbSearch className="size-5" />,
+    className: "px-12",
+    showOn: "all",
+  },
+  {
+    label: "Account",
+    href: "/",
+    icon: <LuUserRoundX className="size-4" />,
+    className: "hidden md:block px-12",
+    showOn: "md",
+  },
+];
+
+function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal-black shadow">
       <div className="flex items-center justify-center h-16 md:h-20">
-
-        <div className="px-12">
+        
+        {/* Search */} 
+        {actionLinks
+          .filter(link => link.showOn === "all")
+          .map(link => (
+            <div className={link.className} key={link.label}>
               <ul className="flex transition-all duration-200 ease-in-out">
                 <li>
                   <a
-                    href="/"
-                    className="text-white font-[400] text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige  transition-colors duration-300 flex items-center gap-2"
+                    href={link.href}
+                    className="text-white font-light text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige  transition-colors duration-300 flex items-center gap-2"
                   >
-                    <TbSearch className="size-5" />
-                    Search
+                    {link.icon}
+                    {link.label}
                   </a>
                 </li>
               </ul>
             </div>
+          ))}
 
         <GlobalContainer>
           <div className="flex items-center justify-between gap-10 ">
             {/* Navigation Links Left Side*/}
             <div className="flex items-center justify-between gap-x-10">
               <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
-                <li>
-                  <a
-                    href="/"
-                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services"
-                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
-                  >
-                    Services
-                  </a>
-                </li>
+                {navLinksLeft.map(link => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-white hover:text-matte-golden-beige transition-colors duration-300"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* LOGO or Brand Name */}
             <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
-              {/* <!-- Conteúdo --> */}
               <img
                 src="/logo/horizon-logo.svg"
                 alt="Logo"
@@ -61,43 +86,40 @@ const Navbar = () => {
 
             {/* Navigation Links Right Side */}
             <div className="flex items-center justify-between gap-x-10">
-              {/* Navigation Links */}
               <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
-                <li>
-                  <a
-                    href="/"
-                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
-                  >
-                    Booking
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services"
-                    className="text-white hover:text-matte-golden-beige transition-colors duration-300"
-                  >
-                    More
-                  </a>
-                </li>
+                {navLinksRight.map(link => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-white hover:text-matte-golden-beige transition-colors duration-300"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
-            
           </div>
         </GlobalContainer>
 
-        <div className="hidden md:block px-12">
+        {/* Login */}        
+        {actionLinks
+          .filter(link => link.showOn === "md")
+          .map(link => (
+            <div className={link.className} key={link.label}>
               <ul className="flex">
                 <li>
                   <a
-                    href="/"
-                    className="text-white font-[400] text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige transition-colors duration-300 flex items-center gap-2"
+                    href={link.href}
+                    className="text-white font-light text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige transition-colors duration-300 flex items-center gap-2"
                   >
-                    <LuUserRoundX className="size-4" />
-                    Account
+                    {link.icon}
+                    {link.label}
                   </a>
                 </li>
               </ul>
             </div>
+          ))}
       </div>
     </nav>
   );
