@@ -42,11 +42,11 @@ const Navbar = () => {
             <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
               {/* <!-- Conteúdo --> */}
               <img
-              src="/logo/horizon-logo.svg"
-              alt="Logo"
-              className="w-10 h-10 mt-4 sm:w-32 sm:h-14 transition-all duration-200"
-            />
-              <p className="text-xs">Barber'shop</p>
+                src="/logo/horizon-logo.svg"
+                alt="Logo"
+                className="w-10 h-10 mt-4 sm:w-32 sm:h-14 transition-all duration-200"
+              />
+              <p className="text-xs font-Lobster font-[400]">Barber'shop</p>
             </div>
 
             {/* Navigation Links Right Side */}
