@@ -48,7 +48,7 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* Logo or Brand Name */}
+            {/* LOGO or Brand Name */}
             <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
               {/* <!-- Conteúdo --> */}
               <img
