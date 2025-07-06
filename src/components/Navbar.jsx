@@ -41,11 +41,12 @@ const Navbar = () => {
             {/* Logo or Brand Name */}
             <div className="relative w-32 h-72 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
               {/* <!-- Conteúdo --> */}
-              <BsScissors className="w-7 h-7 mt-5" />
-              <div className="text-sm md:text-base flex-wrap items-center justify-center">
-                <p className="font-bold">HORIZON</p>
-                <p className="text-xs">Barber'shop</p>
-              </div>
+              <img
+              src="/logo/horizon-logo.svg"
+              alt="Logo"
+              className="w-10 h-10 mt-4 sm:w-32 sm:h-14 transition-all duration-200"
+            />
+              <p className="text-xs">Barber'shop</p>
             </div>
 
             {/* Navigation Links Right Side */}
