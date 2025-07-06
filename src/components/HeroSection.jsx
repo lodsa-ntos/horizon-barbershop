@@ -91,7 +91,7 @@ function HeroSection() {
           <GlobalContainer>
             <div className="flex flex-col items-center justify-center h-full w-full">
               <div className="absolute bottom-24 z-[1] text-center text-white">
-                <h3 className="text-[10px] sm:text-[10px]text-center block mb-2 uppercase tracking-[.0625rem] font-[400] leading-[1rem]">
+                <h3 className="text-[10px] sm:text-[10px] text-center block mb-2 uppercase tracking-[.0625rem] font-[400] leading-[1rem]">
                   Modern classics. Sharp lines. Real confidence.
                 </h3>
                 <h2 className="mb-4 text-xl sm:text-3xl md:text-[32px] font-[400] leading-10 tracking-wide text-center">
@@ -105,7 +105,7 @@ function HeroSection() {
           </GlobalContainer>
         </div>
 
-        
+
       </div>
     </section>
   );

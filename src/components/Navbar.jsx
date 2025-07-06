@@ -1,15 +1,23 @@
 import React from "react";
 import { BsScissors } from "react-icons/bs";
+import { LuUserRoundX } from "react-icons/lu";
+import { TbSearch } from "react-icons/tb";
+import { LuUserRoundCheck } from "react-icons/lu";
 import GlobalContainer from "./Container";
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow">
       <div className="flex items-center justify-center h-16 md:h-20">
+
         <GlobalContainer>
-          <div className="flex items-center justify-between gap-10">
+          <div className="flex items-center justify-between gap-10 ">
             {/* Navigation Links Left Side*/}
-            <div>
+            <div className="flex items-center justify-between gap-x-10">
+              <div className="flex items-center gap-2">
+              <TbSearch className="text-matte-golden-beige size-5"/>
+              <span className="text-black font-[400] text-sm">Search</span>
+            </div>
               <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
                 <li>
                   <a
@@ -50,7 +58,8 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links Right Side */}
-            <div>
+            <div className="flex items-center justify-between gap-x-10">
+              {/* Navigation Links */}
               <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
                 <li>
                   <a
@@ -78,7 +87,15 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
+            <div className="hidden md:block">
+              <ul className="flex gap-x-6 text-sm font-medium">
+                <li>
+                  <a href="/" className="text-black hover:text-matte-golden-beige transition-colors duration-300"><LuUserRoundX className="size-4"/></a>
+                </li>
+              </ul>
+            </div>
           </div>
+          
         </GlobalContainer>
       </div>
     </nav>
