@@ -92,11 +92,13 @@ function Navbar() {
 
             {/* LOGO or Brand Name */}
             <div className="relative w-28 h-[88px]  text-white text-center flex flex-col items-center justify-center  space-y-1">
-              <img
-                src="/logo/horizon-logo.svg"
-                alt="Logo"
-                className="w-10 h-10 mt-1 sm:w-64 sm:h-64 transition-all duration-200"
-              />
+              <a href="/">
+                <img
+                  src="/logo/horizon-logo.svg"
+                  alt="Logo"
+                  className="w-10 h-10 mt-1 sm:w-64 sm:h-64 transition-all duration-200"
+                />
+              </a>
             </div>
 
             {/* Navigation Links Right Side */}
