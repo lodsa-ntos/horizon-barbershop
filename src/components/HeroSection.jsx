@@ -44,7 +44,7 @@ function HeroSection() {
           {/* Video element */}
           <video
             ref={videoRef}
-            className="absolute pb-10 top-0 left-0 w-full h-full object-cover scale-[1]"
+            className="absolute pb-[85px] lg:pb-10 top-0 left-0 w-full h-full object-cover scale-[1]"
             autoPlay
             muted
             loop
@@ -53,7 +53,7 @@ function HeroSection() {
           </video>
 
           {/* controls Play/Pause */}
-          <div className="absolute bottom-20 left-0 px-12 flex items-center justify-between gap-2 z-[15]">
+          <div className="absolute bottom-[103px] md:bottom-[85px] left-0 px-4 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 z-[15]">
             {/* Play/Pause */}
             <button
               onClick={handleVideoPlay}
@@ -68,7 +68,7 @@ function HeroSection() {
           </div>
 
           {/* controls Mute/Unmute */}
-          <div className="absolute bottom-20 right-0 px-12 flex items-center justify-between gap-2 z-[15]">
+          <div className="absolute bottom-[103px] md:bottom-[85px]  right-0 px-4 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 z-[15]">
             {/* Mute/Unmute */}
             <button
               onClick={handleVideoMute}
@@ -84,17 +84,17 @@ function HeroSection() {
         </div>
 
         {/* Gradiente overlay — para escurecer a imagem de baixo para cima */}
-        <div className="absolute inset-0 bottom-10 bg-gradient-to-t from-black/85 via-black/5 to-transparent z-0 pointer-events-none" />
+        <div className="absolute inset-0 bottom-[85px] md:bottom-10 bg-gradient-to-t from-black/85 via-black/5 to-transparent z-0 pointer-events-none" />
+        
 
         {/* Conteúdo centralizado dentro do container */}
-        <div className="relative z-10 flex items-center min-h-screen">
-          <GlobalContainer>
+        <GlobalContainer>
             <div className="flex flex-col items-center justify-center h-full w-full">
-              <div className="absolute bottom-24 z-[1] text-center text-white">
-                <h3 className="text-[10px] sm:text-[10px] text-center drop-shadow-lg block mb-2 uppercase tracking-[.0625rem] font-[400] leading-[1rem]">
+              <div className="absolute bottom-[134px] md:bottom-[93px] z-[1] text-center text-white">
+                <h3 className="text-[10px] sm:text-[10px] text-center drop-shadow-lg block md:mb-1 uppercase tracking-[.0625rem] font-[400] leading-[1rem]">
                   Modern classics. Sharp lines. Real confidence.
                 </h3>
-                <h2 className="mb-4 text-xl sm:text-3xl md:text-[32px] drop-shadow-lg font-[400] leading-10 tracking-wide text-center">
+                <h2 className="md:mb-7 text-xl sm:text-3xl md:text-[2rem] drop-shadow-lg font-[500] leading-10 tracking-wide text-center">
                   Horizon - Your Style, Your Mark
                 </h2>
                 <h3 className="text-xs sm:text-[10px] lg:text-[15px] text-center italic font-[500] drop-shadow-lg max-w-2xl mx-auto">
@@ -103,8 +103,6 @@ function HeroSection() {
               </div>
             </div>
           </GlobalContainer>
-        </div>
-
 
       </div>
     </section>
