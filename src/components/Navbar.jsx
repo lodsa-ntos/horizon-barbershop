@@ -7,10 +7,13 @@ import GlobalContainer from "./Container";
 
 const navLinksLeft = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Serviços", href: "/servicos" },
 ];
 
-const navLinksRight = [{ label: "Booking", href: "/" }];
+const navLinksRight = [
+  { label: "Reservas", href: "/reservas" },
+  { label: "Sobre nós", href: "/sobrenos" }
+];
 
 const actionLinks = [
   {
@@ -21,7 +24,7 @@ const actionLinks = [
     showOn: "all",
   },
   {
-    label: "Account",
+    label: "Conta",
     href: "/",
     icon: <LuUserRoundX className="size-4" />,
     className: "hidden md:block px-12",
@@ -48,7 +51,8 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal-black shadow transition-all duration-300">
-      <div className="flex items-center justify-center h-16 md:h-20">
+      <div className="flex items-center justify-center h-16 md:h-[88px]">
+        
         {/* Search */}
         {actionLinks
           .filter((link) => link.showOn === "all")
@@ -58,7 +62,7 @@ function Navbar() {
                 <li>
                   <a
                     href={link.href}
-                    className="text-white font-light text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige  transition-colors duration-300 flex items-center gap-2"
+                    className="text-white font-regular text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige  transition-colors duration-300 flex items-center gap-2"
                   >
                     {link.icon}
                     {link.label}
@@ -72,7 +76,7 @@ function Navbar() {
           <div className="flex items-center justify-between gap-10 ">
             {/* Navigation Links Left Side*/}
             <div className="flex items-center justify-between gap-x-10">
-              <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-[400]">
+              <ul className="flex gap-x-10 uppercase text-sm tracking-wide font-medium">
                 {navLinksLeft.map((link) => (
                   <li key={link.label}>
                     <a
@@ -87,13 +91,12 @@ function Navbar() {
             </div>
 
             {/* LOGO or Brand Name */}
-            <div className="relative w-24 h-60 bg-matte-golden-beige text-white text-center flex flex-col items-center justify-center banner-clip space-y-1">
+            <div className="relative w-28 h-[88px]  text-white text-center flex flex-col items-center justify-center  space-y-1">
               <img
                 src="/logo/horizon-logo.svg"
                 alt="Logo"
-                className="w-10 h-10 mt-4 sm:w-32 sm:h-14 transition-all duration-200"
+                className="w-10 h-10 mt-1 sm:w-64 sm:h-64 transition-all duration-200"
               />
-              <p className="text-base font-Lobster font-[400]">Barber'shop</p>
             </div>
 
             {/* Navigation Links Right Side */}
@@ -110,71 +113,6 @@ function Navbar() {
                   </li>
                 ))}
               </ul>
-
-              {/* Dropdown Menu - MORE */}
-              <div className="relative" ref={dropdownRef}>
-                <button
-                  id="dropdownHoverButton"
-                  className="flex items-center justify-center text-sm tracking-wide font-[400] text-white hover:text-matte-golden-beige uppercase transition-colors duration-300"
-                  type="button"
-                  onClick={() => setOpen((v) => !v)}
-                >
-                  More{" "}
-                  <svg
-                    className="w-2.5 h-2.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                </button>
-
-                {/* Dropdown menu */}
-                <div
-                  id="dropdownHover"
-                  className={`z-10 absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-28 dark:bg-gray-700 transition-all duration-200 ${
-                    open ? "" : "hidden"
-                  }`}
-                >
-                  <ul
-                    className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                    aria-labelledby="dropdownHoverButton"
-                  >
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Contact
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Gallery
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </GlobalContainer>
@@ -188,7 +126,7 @@ function Navbar() {
                 <li>
                   <a
                     href={link.href}
-                    className="text-white font-light text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige transition-colors duration-300 flex items-center gap-2"
+                    className="text-white font-regular text-[0.875rem] leading-[1rem] tracking-[.025rem] hover:text-matte-golden-beige transition-colors duration-300 flex items-center gap-2"
                   >
                     {link.icon}
                     {link.label}
