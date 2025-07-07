@@ -27,7 +27,7 @@ const actionLinks = [
     label: "Conta",
     href: "/",
     icon: <LuUserRoundX className="size-4" />,
-    className: "hidden md:block px-12",
+    className: "hidden md:block px-4 sm:px-6 md:px-8 lg:px-12 transition-all duration-300",
     showOn: "md",
   },
 ];

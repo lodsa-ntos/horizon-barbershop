@@ -5,9 +5,9 @@ function FooterSection() {
   return (
     <footer className='bg-verde-pastel'>
         <GlobalContainer>
-          <div className='pt-20 pb-20 text-white'>
+          <div className='pt-20 pb-20 text-charcoal-black'>
 
-            <p>asdasdasdasdasdasd</p>
+            <p>footer</p>
 
         </div>
 
