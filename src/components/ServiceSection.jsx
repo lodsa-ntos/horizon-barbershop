@@ -5,24 +5,21 @@ function ServiceSection() {
   return (
     <section className="bg-white py-3 min-h-screen">
       {/* Section Title */}
-      <h2 className="text-xs sm:text-sm text-matte-golden-beige font-semibold text-center block mb-2 uppercase tracking-wide">
-        Os Nossos Serviços
-      </h2>
-      <p className="text-center text-charcoal-black mb-10 text-[32px] font-medium leading-10 tracking-wide">
-        Cortes, aparos e tratamentos <br />
-        que elevam o teu estilo e confiança.
+      <p className="text-center text-charcoal-black  text-[32px] font-[400] leading-10 tracking-wide mb-10">
+        <strong>Cortes</strong>, <strong>aparos</strong> e tratamentos <br />
+        que elevam o teu <strong>estilo</strong> e <strong>confiança</strong>
       </p>
 
       <GlobalContainer>
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center">
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          
           {/* Service Card 1 */}
           <div className="text-center mb-2">
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/classicos/classico-2.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -30,13 +27,13 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Corte estruturado, manutenção do estilo tradicional.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Corte Clássico
             </h3>
           </div>
 
@@ -45,7 +42,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/deluxe/deluxe-2.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -53,13 +50,14 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Estilos modernos e personalizados, desde tranças clássicas a
+                  padrões criativos. Requer agendamento antecipado.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Corte Deluxe
             </h3>
           </div>
 
@@ -68,7 +66,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/infantil/infantil-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -76,13 +74,13 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Adaptado a crianças, rápido e confortável.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Corte Infantil
             </h3>
           </div>
 
@@ -91,7 +89,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/barbas/barbas-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -99,13 +97,13 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Navalha ou máquina, com linha bem definida.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Barba & Contorno
             </h3>
           </div>
 
@@ -114,7 +112,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/simples/simples-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -122,13 +120,14 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Para quem tem pressa mas não abdica de um bom estilo. Corte
+                  rápido e eficaz.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Serviço Express
             </h3>
           </div>
 
@@ -137,7 +136,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/shave/shave-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -145,13 +144,14 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Cuidado completo da barba com espuma, navalha e finalização
+                  precisa.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Barba VIP
             </h3>
           </div>
 
@@ -160,7 +160,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/alinhamento/corte-cabelo-kid+adult-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -168,14 +168,18 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Corte com degradê perfeito — transição suave entre níveis de
+                  cabelo, do natural ao zero.
                 </p>
               </div>
             </div>
-            <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
-            </h3>
+            <div className="mt-3">
+              <h3 className="text-[16px] font-regular leading-tight">
+                Corte Pai & Filho
+              </h3>
+              <p className="text-sm text-gray-500">(Kids + Adulto juntos)</p>
+            </div>
           </div>
 
           {/* Service Card 8 */}
@@ -183,7 +187,7 @@ function ServiceSection() {
             <div className="bg-gray-100 max-w-xs mx-auto h-[345px] shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-all duration-300 cursor-pointer">
               {/* Image */}
               <img
-                src="images/cortes/classicos/classico-1.jpg"
+                src="images/cortes/skinfade/fade-1.svg"
                 alt="corte de cabelo"
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[485px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -191,16 +195,16 @@ function ServiceSection() {
               {/* Overlay with Text */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px] text-white px-5 py-5 space-y-2 text-left">
                 <h3 className="text-xl font-semibold mb-2"></h3>
-                <p className="text-gray-400 mb-4">
-                  Cortes modernos e clássicos para todos os estilos.
+                <p className="text-gray-100 text-shadow-lg-super mb-4">
+                  Corte com degradê perfeito — transição suave entre níveis de
+                  cabelo, do natural ao zero.
                 </p>
               </div>
             </div>
             <h3 className="flex justify-center mt-4 text-[16px] font-regular mb-3">
-              Corte de classíco
+              Fade / Skin Fade
             </h3>
           </div>
-
         </div>
       </GlobalContainer>
     </section>

@@ -51,7 +51,10 @@ export default {
         'charcoal-black': '#1F1F1F ', // fundo geral / Texto secundário
         'graphite-gray': '#3A3A3C', // bordas; HOVERS de botões
         'ice-white': '#F5F5F7', // texto primário
-        'matte-golden-beige': '#bb8c4d', // fundo CTA buttons
+        'matte-golden-beige': '#bb8c4d', //#ca8a04 fundo CTA buttons 
+        'matte-golden-beige-light': '#d6c4a0', // fundo CTA buttons hover
+        'matte-golden-beige-dark': '#a67c3b', // fundo
+        'beige-darker': '#ca8a04', // fundo CTA buttons active
         'light-gray-blue': '#E1E3E6', // Botões, destaques primários
         'dark-wine-red': '#6A2E2A', // Hover de links e detalhes
       },

@@ -106,13 +106,13 @@ html {
 
 /* Cor da barra do scroll */
 ::-webkit-scrollbar-thumb {
-    background: #737777FF;
+    background: #bb8c4d;
     border-radius: 5px;
 }
 
 /* Quando o rato passa por cima */
 ::-webkit-scrollbar-thumb:hover {
-    background: #737777FF;
+    background: #bb8c4d;
 }
 
 @media (max-width: 575.98px) {
