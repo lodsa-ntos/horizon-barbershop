@@ -128,7 +128,7 @@ function PremiumSection() {
             className="text-charcoal-black border border-charcoal-black
              hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-900 ease-in-out"
           >
-            Agendar agora
+            Selecionar horário
           </a>
         </div>
       </div>
