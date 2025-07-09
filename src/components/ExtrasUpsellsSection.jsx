@@ -9,7 +9,7 @@ function ExtrasUpsellsSection() {
           <img
           src="images/banners/man-products.jpg"
           alt="corte de cabelo"
-          className="block min-w-[100vw] h-80 sm:h-80 md:h-96 lg:h-[650px] object-cover transition duration-300"
+          className="block min-w-[100vw] h-80 sm:h-80 md:h-96 lg:h-[850px] object-cover transition duration-300"
         />
       </div>
 
@@ -119,6 +119,19 @@ function ExtrasUpsellsSection() {
           </div>
         </div>
       </GlobalContainer>
+
+      {/* CTA Button center */}
+      <div>
+        <div className="flex justify-center mt-[43px]">
+          <a
+            href="#"
+            className="text-charcoal-black border border-charcoal-black
+             hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-200 ease-in-out"
+          >
+            Explorar mais
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

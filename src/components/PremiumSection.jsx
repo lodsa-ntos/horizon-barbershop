@@ -3,7 +3,7 @@ import GlobalContainer from "./Container";
 
 function PremiumSection() {
   return (
-    <section className="bg-white py-20 mb-[70px] min-h-screen">
+    <section className="bg-white py-20 mb-[48px] min-h-screen">
       {/* Banner Image */}
       <div>
         <img
@@ -126,7 +126,7 @@ function PremiumSection() {
           <a
             href="#"
             className="text-charcoal-black border border-charcoal-black
-             hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-200 ease-in-out"
+             hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-900 ease-in-out"
           >
             Agendar agora
           </a>
