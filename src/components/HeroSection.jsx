@@ -94,18 +94,18 @@ function HeroSection() {
                 
               </h3>
               <h2 className="mb-4 md:mb-6 text-[32px] drop-shadow-lg font-semibold font-Jost leading-10 tracking-wide">
-                O teu estilo. A tua marca.
+                🖤 Cortes com assinatura. Estilo que te representa.
               </h2>
-              <h3 className="text-[16px] text-white/90 font-medium drop-shadow-lg max-w-2xl mx-auto mb-6">
-                Cada corte molda a tua identidade
+              <h3 className="text-[16px] text-white/90 font-medium drop-shadow-lg max-w-2xl mx-auto mb-6 leading-relaxed">
+                Eleva a tua confiança com um corte feito à tua medida,<br /> preciso, moderno e com personalidade.
               </h3>
 
                {/* CTA Button */}
             <button
                 href="#"
-                className="inline-flex items-center justify-center gap-1 px-6 py-2 bg-yellow-600 text-white font-medium text-sm rounded-3xl shadow-lg hover:bg-yellow-700 hover:scale-[1.03] transition-transform duration-200 ease-in-out"
+                className="inline-flex min-w-[120px] items-center justify-center gap-1 px-[40px] h-[56px] bg-yellow-600 text-white font-[500] text-[18px] rounded-[28px] shadow-lg hover:bg-yellow-700  hover:scale-[1.03] transition-transform duration-200 ease-in-out"
               >
-                <PiCalendarDotsBold /> Reservar agora
+                <PiCalendarDotsBold />  Marcar corte agora
               </button>
             </div>
           </div>

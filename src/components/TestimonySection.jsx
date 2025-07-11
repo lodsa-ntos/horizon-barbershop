@@ -1,7 +1,38 @@
 import React from "react";
-import GlobalContaineir from "./Container";
+import GlobalContainer from "./Container";
 import { MdPerson } from "react-icons/md";
 import StarRating from "../utils/StarRating";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+
+const testimonies = [
+  {
+    name: "Jane D",
+    role: "CEO",
+    avatar: "https://pagedone.io/asset/uploads/1696229969.png",
+    rating: 5,
+    text: "Pagedone is simply the best tool of investment in the market right now.",
+  },
+  {
+    name: "Harsh P.",
+    role: "Product Designer",
+    avatar: "https://pagedone.io/asset/uploads/1696229994.png",
+    rating: 5,
+    text: "I was hesitant to try pagedone at first, but I'm so glad I did - it's exceeded all of my expectations.",
+  },
+  {
+    name: "Alex K.",
+    role: "Design Lead",
+    avatar: "https://pagedone.io/asset/uploads/1696230027.png",
+    rating: 5,
+    text: "Pagedone stands out as the most user-friendly and effective solution I've ever used.",
+  },
+];
 
 function TestimonySection() {
   return (
@@ -21,178 +52,85 @@ function TestimonySection() {
       </div>
 
       {/* Testimonials */}
-      <GlobalContaineir>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          {/* Testimonial Card 1 */}
-          <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
-                </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">André Costa</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
+      <GlobalContainer>
+        <div>
+          <div className="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
+            <h2 className="text-4xl text-center font-bold text-gray-900 lg:text-left">Testimonials</h2>
+            <div className="flex items-center gap-8">
+              <button
+                id="slider-button-left"
+                className="swiper-button-prev group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                data-carousel-prev
+              >
+                <svg className="h-6 w-6 text-indigo-600 group-hover:text-white" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                id="slider-button-right"
+                className="swiper-button-next group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                data-carousel-next
+              >
+                <svg className="h-6 w-6 text-indigo-600 group-hover:text-white" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Ambiente tranquilo, atendimento top e um corte que me surpreendeu. Voltarei com certeza."
-            </p>
           </div>
 
-            {/* Testimonial Card 2 */}
-            <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={10}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            navigation={{
+              nextEl: "#slider-button-right",
+              prevEl: "#slider-button-left",
+            }}
+            className="mySwiper"
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {testimonies.map((t, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600">
+                  <div className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500 group-hover:text-indigo-600">
+                    <StarRating rating={t.rating} />
+                  </div>
+                  <p className="text-lg text-gray-500 leading-8 h-24 transition-all duration-500 mb-9 group-hover:text-gray-800">
+                    {t.text}
+                  </p>
+                  <div className="flex items-center gap-5">
+                    <img className="rounded-full object-cover" src={t.avatar} alt="avatar" />
+                    <div className="grid gap-1">
+                      <h5 className="text-gray-900 font-medium transition-all duration-500 group-hover:text-indigo-600">
+                        {t.name}
+                      </h5>
+                      <span className="text-sm leading-6 text-gray-500">{t.role}</span>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">Tiago Rodrigues</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
-            </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Profissionalismo e simpatia desde o primeiro minuto. O degradê ficou impecável."
-            </p>
-          </div>
-
-            {/* Testimonial Card 3 */}
-            <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
-                </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">Miguel Barros</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
-            </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Corte perfeito, barba alinhada e uma conversa agradável. Tudo impecável."
-            </p>
-          </div>
-
-            {/* Testimonial Card 4 */}
-            <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
-                </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">Joana Ferreira</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
-            </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Levei o meu filho para cortar o cabelo e adorámos o atendimento. Super atenciosos."
-            </p>
-          </div>
-
-          {/* Testimonial Card 5 */}
-          <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
-                </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">Fábio Martins</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
-            </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Foi a minha primeira vez e fiquei impressionado. Um dos melhores cortes que já tive."
-            </p>
-          </div>
-
-          { /* Testimonial Card 6 */}
-          <div className="bg-[#f9fafb] border-b-2 border-solid border-[#bb8c4d] inset-0 rounded-lg shadow-md">
-            
-            <div className="bg-[#2B2B2B] p-6 rounded-t-lg flex items-center justify-between gap-5">
-              <div className="flex items-center justify-start gap-2">
-                <div className=" bg-[#484848] w-10 h-10 rounded-full flex items-center justify-center">
-                  <MdPerson className="text-[#F8F5F2] size-5" />
-                </div>
-
-                {/* Customer Name */}
-                <div>
-                  <h3 className="text-base text-white font-bold">Inês Rocha</h3>
-                <span className="text-[0.75rem] text-[#999] font-[700]">Cliente verificado</span>
-                </div>
-              </div>
-
-              {/* Star Rating */}
-              <div>
-                <StarRating rating={5} />
-              </div>
-            </div>
-
-            {/* Testimonial Content */}
-            <p className="text-[#2B2B2B] mb-4 p-6">
-              "Acompanhei o meu namorado e acabei por marcar um corte também. Saímos os dois satisfeitos."
-            </p>
-          </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </GlobalContaineir>
+      </GlobalContainer>
     </section>
   );
 }

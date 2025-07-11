@@ -3,23 +3,15 @@ import GlobalContainer from "./Container";
 
 function ExtrasUpsellsSection() {
   return (
-    <section className="bg-white min-h-screen">
-      <div>
-        {/* Image element */}
-          <img
-          src="images/banners/man-products.jpg"
-          alt="corte de cabelo"
-          className="block min-w-[100vw] h-80 sm:h-80 md:h-96 lg:h-[850px] object-cover transition duration-300"
-        />
-      </div>
+    <section className="bg-[#F6F4F0] py-16 min-h-screen">
 
       {/* Section Title */}
-      <div className="block mt-12 mb-6">
-        <h2 className="text-[10px] text-beige-darker font-light text-center block mb-2 uppercase leading-4 tracking-[.0625rem]">
-          Valor adicional
+      <div className="block mt-12 mb-36">
+        <h2 className="text-[55px] font-black block  tracking-wider mb-14 text-center leading-10">
+          🪒 Pequenos extras<span className="text-beige-darker align-baseline text-7xl font-extrabold">.</span> <br /> Grandes resultados<span className="text-beige-darker align-baseline text-7xl font-extrabold">.</span>
         </h2>
-        <p className="text-center text-charcoal-black  text-[32px] font-[400] leading-10 tracking-wide">
-          Extras e Upsells
+        <p className="text-center text-charcoal-black  text-[18px] font-[400] tracking-[1.66667px] leading-relaxed">
+          Adiciona um detalhe extra ao teu atendimento <br /> <strong>um acabamento perfeito</strong>,<br /> <strong>uma hidratação profunda</strong> ou <strong>uma experiência de luxo</strong>.
         </p>
       </div>
 

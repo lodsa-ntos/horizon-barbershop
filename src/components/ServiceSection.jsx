@@ -5,9 +5,11 @@ function ServiceSection() {
   return (
     <section className="bg-white py-3 min-h-screen">
       {/* Section Title */}
-      <p className="text-center text-charcoal-black  text-[32px] font-[400] leading-10 tracking-wide mb-10">
-        <strong>Cortes</strong>, <strong>aparos</strong> e tratamentos <br />
-        que elevam o teu <strong>estilo</strong> e <strong>confiança</strong>
+      <h2 className="text-center text-charcoal-black  text-[30px] font-bold leading-10 tracking-wide mb-2">
+        Escolhe o teu corte. Reinventa o teu visual.
+      </h2>
+      <p className="text-center text-charcoal-black  text-[15px] font-medium  tracking-wide mb-14">
+        De cortes clássicos a fades modernos, com técnica e atenção ao detalhe.
       </p>
 
       <GlobalContainer>
@@ -207,6 +209,19 @@ function ServiceSection() {
           </div>
         </div>
       </GlobalContainer>
+
+      {/* CTA Button center */}
+      <div>
+        <div className="flex justify-center mt-[43px]">
+          <a
+            href="#"
+            className="text-charcoal-black border border-charcoal-black
+             hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-900 ease-in-out"
+          >
+            Reservar
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

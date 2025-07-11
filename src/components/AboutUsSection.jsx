@@ -55,54 +55,28 @@ function AboutUsSection() {
         </p>
       ),
     },
-    {
-      icon: (
-        <>
-          <div>
-            <IoPeopleSharp className="text-beige-darker size-6" />
-          </div>
-        </>
-      ),
-      title: <h3>Para quem é?</h3>,
-      description: (
-        <p>
-          Homens, jovens ou pais com filhos — 
-          <strong className="text-matte-golden-beige ml-1">
-            todos são bem-vindos.
-          </strong>
-          <br /> <br />
-          Se procuras 
-          <strong className="text-matte-golden-beige ml-1">
-            um corte com personalidade 
-          </strong>
-          , num ambiente onde te sentes bem, 
-          <strong className="text-matte-golden-beige ml-1">
-            com profissionais que realmente se importam contigo
-          </strong>
-          , este é o teu espaço.
-        </p>
-      ),
-    },
   ];
 
   return (
     <section id="features" className="w-full bg-[#F6F4F0] mb-[80px] py-16 ">
       <div className="px-4 sm:px-6 md:px-8 lg:px-12">
-        {/* Left side Heading text */}
-          <div className="md:mb-0 flex flex-col justify-center items-start text-start ">
+  
+        {/* Middle side text */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8">
 
-            <h2 className="text-[12px] text-beige-darker font-medium text-center block uppercase leading-4 tracking-wider mb-2">
+            {/* Left side Heading text */}
+          <div className="flex flex-col justify-start items-start col-span-1 md:col-span-2 lg:col-span-1 mb-8">
+
+            <h2 className="text-[12px] text-beige-darker font-medium block uppercase leading-4 tracking-wider mb-2">
               Sobre nós
             </h2>
 
-            <p className="text-start text-charcoal-black  text-[32px] font-[400] leading-10 tracking-wide mb-10">
+            <p className="text-start text-charcoal-black text-[32px] font-[400] leading-10 tracking-wide mb-10">
             <strong>Corte, identidade</strong> e <strong> confiança,</strong> <br />
                mais do que um simples serviço.
             </p>
           </div>
 
-        {/* Middle side text */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8">
             {aboutUsData.map((item, index) => (
               <div key={index} className="flex flex-col items-start justify-start space-y-4">
                 
@@ -118,7 +92,6 @@ function AboutUsSection() {
                     {item.description}
                   </p>
                 </div>
-
               </div>
             ))}
           </div>

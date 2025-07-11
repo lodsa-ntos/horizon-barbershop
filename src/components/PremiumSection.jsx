@@ -4,22 +4,15 @@ import GlobalContainer from "./Container";
 function PremiumSection() {
   return (
     <section className="bg-white py-20 mb-[48px] min-h-screen">
-      {/* Banner Image */}
-      <div>
-        <img
-          src="images/banners/barbershop_3.jpg"
-          alt="corte de cabelo"
-          className="block min-w-[100vw] h-80 sm:h-80 md:h-96 lg:h-[650px] object-cover transition duration-300"
-        />
-      </div>
 
       {/* Section Title */}
-      <div className="block mt-12 mb-6">
-        <h2 className="text-[10px] text-beige-darker font-light text-center block mb-2 uppercase leading-4 tracking-[.0625rem]">
-          Diferenciais
+      <div className="block mt-28 mb-36 w-4/6 mx-auto">
+        <h2 className="text-[55px] font-black block  tracking-wider mb-14 text-center leading-10">
+          🧴 Tratamentos premium para um cuidado completo
+          <span className="text-beige-darker align-baseline text-7xl font-extrabold">.</span>
         </h2>
-        <p className="text-center text-charcoal-black  text-[32px] font-[400] leading-10 tracking-wide">
-          Serviços Premium
+        <p className="text-center text-charcoal-black  text-[18px] font-[400] tracking-[1.66667px] leading-relaxed">
+          Cuida da tua pele, da tua barba e do teu bem-estar <br /> com os nossos serviços exclusivos <br /> ideais para relaxar e destacar o teu melhor visual.
         </p>
       </div>
 
@@ -125,8 +118,8 @@ function PremiumSection() {
         <div className="flex justify-center mt-[43px]">
           <a
             href="#"
-            className="text-charcoal-black border border-charcoal-black
-             hover:ring-inset hover:ring-1 hover:ring-gray-800 px-8 py-2 rounded-full text-lg font-regular transition duration-900 ease-in-out"
+            className="text-white bg-beige-darker border border-matte-golden-beige
+             hover:ring-inset hover:scale-105 hover:brightness-110 px-8 py-2 rounded-full text-lg font-regular transition duration-900 ease-in-out"
           >
             Selecionar horário
           </a>
